@@ -44,7 +44,7 @@ void ssd1306_begin(unsigned int vccstate, unsigned int i2caddr)
 	OLED_WR_Byte(0xB0,OLED_CMD);//---set high column address
 	OLED_WR_Byte(0xC8,OLED_CMD);//-not offset
 	OLED_WR_Byte(0x81,OLED_CMD);//Set Contrast
-	OLED_WR_Byte(0xff,OLED_CMD);
+	OLED_WR_Byte(CONTRAST,OLED_CMD);//contrast value from header file
 	OLED_WR_Byte(0xa1,OLED_CMD);
 	OLED_WR_Byte(0xa6,OLED_CMD);
 	OLED_WR_Byte(0xa8,OLED_CMD);

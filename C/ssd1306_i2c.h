@@ -30,6 +30,7 @@ extern int i2cd;
 #define BLACK 0
 #define WHITE 1
 #define INVERSE 2
+#define CONTRAST 0xff    // contrast between 0 and 255 in hex so 0x00 an 0xff
 
 #define OLED_CMD  0	                 //command
 #define OLED_DATA 1	                //data
